@@ -15,4 +15,4 @@ Create the payload:
 Add the payload to the exploit!
 
 Now, you can launch the exploit:
-<pre>python CVE2009-2585_HP_Power_Manager_BoF.py IP </pre>
+<pre>python CVE2009-2585_HP_Power_Manager_BoF.py 10.10.10.10 </pre>
