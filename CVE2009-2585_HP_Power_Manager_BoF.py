@@ -3,7 +3,7 @@ print """
 ###################################################################################################################################
 ## It is a version modified of the original exploit by Muhammad Haidari(https://raw.githubusercontent.com/Muhammd/HP-Power-Manager/master/hpm_exploit.py). 
 ## The modification includes a payload which allows to obtain a reverse shell to avoid to open ports in the ##Windows'target which the ## firewall's windows will be closed it.							##							
-## Remenber to put a listener to listen to any response before to launch the exploit in the port properly!
+## Remember to put a listener to listen to any response before to launch the exploit in the port properly!
 ##
 ##Vulnerability: HP Power Manager 'formExportDataLogs'    		             
 ## 											 	             
